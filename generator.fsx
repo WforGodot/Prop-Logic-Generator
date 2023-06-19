@@ -58,34 +58,6 @@ writer.Close()
 printfn "%d %d" ques_list.Length ques_list2.Length
 printfn "%d" no_true
 
-    
-
- (*let quesA = generate_ques ["John is a dick"; "all dicks have clothes" ; "John is a tailor"] 2 4 2
- 
- printfn "%s" (print_ques quesA)
- printfn "%A" (answer_ques quesA)*)
-
-(* let propx = Iff (And (Atom("S"), Or (Atom("X"), Atom("S"))), Imp (False, Atom("tailor")))
-
-printfn "%s" (print_prop propx)
-printfn "%A" (solve propx ["S"; "X" ; "tailor"] [true; false; false])*)
-
-(*let mutable no_true = 0
-
-let proplist = List.map (fun i -> (generate_prop ["P"; "Q"] 4)) [1..100]
-
-for propy in proplist do   
-    printfn "%s" (symb_prop propy)
-    printfn "%A" (is_tautology propy ["P"; "Q"; "R"])
-    if is_tautology propy ["P"; "Q"; "R"] then no_true <- no_true + 1
-
-let proplist2 = List.distinct proplist
-printfn "%d %d" proplist.Length proplist2.Length
-
-printfn "%d" no_true *)
-
-(*printfn "%A" (create_boolray 4) *)
-
 
 
 
